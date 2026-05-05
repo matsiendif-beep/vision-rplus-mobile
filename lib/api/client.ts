@@ -66,6 +66,12 @@ export const analyticsApi = {
     api.get(`/companies/${cid}/analytics/kpis`, { params: { fiscal_year_id: fyId } }).then(r => r.data),
   balance: (cid: string, fyId: string) =>
     api.get(`/companies/${cid}/analytics/balance`, { params: { fiscal_year_id: fyId } }).then(r => r.data),
+  bilan: (cid: string, fyId: string) =>
+    api.get(`/companies/${cid}/analytics/bilan`, { params: { fiscal_year_id: fyId } }).then(r => r.data),
+  compteResultat: (cid: string, fyId: string) =>
+    api.get(`/companies/${cid}/analytics/compte-resultat`, { params: { fiscal_year_id: fyId } }).then(r => r.data),
+  grandLivre: (cid: string, fyId: string) =>
+    api.get(`/companies/${cid}/analytics/grand-livre`, { params: { fiscal_year_id: fyId } }).then(r => r.data),
 };
 
 // ── Documents ─────────────────────────────────────────────────

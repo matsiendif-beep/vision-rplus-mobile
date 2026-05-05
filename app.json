@@ -4,14 +4,8 @@
     "slug": "vision-rplus",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
     "scheme": "visionrplus",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0B1C3D"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.visionrplus.app",
@@ -21,10 +15,6 @@
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#0B1C3D"
-      },
       "package": "com.visionrplus.app",
       "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
     },

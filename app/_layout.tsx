@@ -3,6 +3,7 @@ import { Stack }      from 'expo-router';
 import { StatusBar }  from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import Toast          from 'react-native-toast-message';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useAuthStore } from '../lib/store';
 import { initDb }    from '../lib/db/offline';
 
@@ -19,13 +20,13 @@ export default function RootLayout() {
   if (isLoading) return null;
 
   return (
-    <>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="auth"   />
+        <Stack.Screen name="auth" />
       </Stack>
       <StatusBar style="light" />
       <Toast />
-    </>
+    </GestureHandlerRootView>
   );
 }
